@@ -48,8 +48,8 @@ def main():
         with youtube_dl.YoutubeDL(options) as ydl:
             ydl.download([video])
     #Moves the files to a set location
-        source = os.listdir("C:\\Users\Tyler Soule\Documents\Downloaded Py YT")
-        destination = "C:\\Users\Tyler Soule\Music"
+        source = os.listdir("<DIR>")
+        destination = "<DIR-DIRECTORY>"
         for files in source:
             if files.endswith(".mp3"):
                 shutil.copy(files,destination)
